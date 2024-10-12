@@ -11,7 +11,7 @@ A sleek, easy-to-use web application that fetches and displays movies using a Mo
 ## 🛠️ Technologies Used  
 - **HTML5 / CSS3 / JavaScript**  
 - **Movies API** (e.g., [TMDB API](https://www.themoviedb.org/documentation/api))  
-- **Bootstrap 
+- **Bootstrap**
 
 ## ⚙️ Installation and Setup  
 
