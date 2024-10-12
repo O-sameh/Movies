@@ -1,7 +1,3 @@
-Here’s a simple README.md template tailored for your movie website project:  
-
----
-
 # 🎬 Simple Movies Website  
 
 A sleek, easy-to-use web application that fetches and displays movies using a Movies API. The website allows users to explore **Popular**, **Now Playing**, **Upcoming**, and **Top Rated** movies with real-time data.
