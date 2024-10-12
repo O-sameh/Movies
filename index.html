@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="bg-dark">
+    <div class="sidebar border-0">
+      <button onclick="getMovies('now_playing','Now Playing')" class="btn fs-5 fw-light py-3">Now Playing</button>
+      <button onclick="getMovies('top_rated','Top Rated')" class="btn fs-5 fw-light py-3">Top Rated</button>
+      <button onclick="getMovies('upcoming','Up Coming')" class="btn fs-5 fw-light py-3">Up Coming</button>
+      <button onclick="getMovies('popular','Popular')" class="btn fs-5 fw-light py-3">Popular</button>
+    </div>  
+    <section class="movies">
+        <div class="section-header container text-center text-light my-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 id="moviestype" class="fw-light">Now Playing Movies</h1>
+                    <div class="search mt-5 mb-3">
+                        <!-- Use form-control and responsive column classes -->
+                        <div class="row justify-content-center">
+                            <div class="col-md-4 mb-3">
+                                <input id="wordsearch" class="text-center border-0 border-bottom bg-dark text-light form-control" type="search" placeholder="Get movies by word...">
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <input id="ratesearch" class="text-center border-0 border-bottom bg-dark text-light form-control" type="search" placeholder="Search by rate">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-content">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                  <div class="col-md-10 mx-auto">
+                    <div class="row" id="moviesrow">
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
